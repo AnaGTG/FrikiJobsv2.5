@@ -1,0 +1,338 @@
+quit_penalty: 50.0
+
+jobs:
+  minero:
+    name: "Minero"
+    description: "Especializado en la extracción de minerales, excavación y procesamiento de rocas."
+    max_reward_info: "¡Al alcanzar el Nivel Máximo (TVII), podrás craftear un Pico 3x3 legendario para excavación masiva!"
+    tiers:
+      TI:
+        required_xp: 0
+        reward_money: 0.2
+        reward_xp: 2
+        materials: ["STONE", "COAL_ORE", "DEEPSLATE_COAL_ORE"]
+        info: "Piedra y Carbón ($0.2 / 2 XP)"
+      TII:
+        required_xp: 36000
+        reward_money: 0.8
+        reward_xp: 5
+        materials: ["IRON_ORE", "DEEPSLATE_IRON_ORE", "COPPER_ORE", "DEEPSLATE_COPPER_ORE"]
+        info: "Hierro y Cobre ($0.8 / 5 XP)"
+      TIII:
+        required_xp: 100000
+        reward_money: 1.5
+        reward_xp: 10
+        materials: ["REDSTONE_ORE", "DEEPSLATE_REDSTONE_ORE", "LAPIS_ORE", "DEEPSLATE_LAPIS_ORE"]
+        info: "Redstone y Lapislázuli ($1.5 / 10 XP)"
+      TIV:
+        required_xp: 250000
+        reward_money: 3.0
+        reward_xp: 20
+        materials: ["GOLD_ORE", "DEEPSLATE_GOLD_ORE", "NETHER_GOLD_ORE"]
+        info: "Oro ($3.0 / 20 XP)"
+      TV:
+        required_xp: 500000
+        reward_money: 6.0
+        reward_xp: 40
+        materials: ["DIAMOND_ORE", "DEEPSLATE_DIAMOND_ORE"]
+        info: "Diamante ($6.0 / 40 XP)"
+      TVI:
+        required_xp: 1000000
+        reward_money: 12.0
+        reward_xp: 80
+        materials: ["EMERALD_ORE", "DEEPSLATE_EMERALD_ORE"]
+        info: "Esmeralda ($12.0 / 80 XP)"
+      TVII:
+        required_xp: 2000000
+        reward_money: 25.0
+        reward_xp: 150
+        materials: ["ANCIENT_DEBRIS"]
+        info: "ancient debris ($25.0 / 150 XP)"
+
+  lenador:
+    name: "Leñador"
+    description: "Especializado en la tala de árboles, recolección de maderas y derivados."
+    max_reward_info: "¡Al alcanzar el Nivel Máximo (TVII), podrás talar árboles completos de un solo golpe!"
+    tiers:
+      TI:
+        required_xp: 0
+        reward_money: 0.2
+        reward_xp: 2
+        materials: ["SPRUCE_LOG", "SPRUCE_WOOD", "JUNGLE_LOG", "JUNGLE_WOOD"]
+        info: "Abeto y Jungla ($0.2 / 2 XP por tronco)"
+      TII:
+        required_xp: 25000
+        reward_money: 0.5
+        reward_xp: 5
+        materials: ["DARK_OAK_LOG", "DARK_OAK_WOOD", "PALE_OAK_LOG", "PALE_OAK_WOOD"]
+        info: "Roble Oscuro y Pálido ($0.5 / 5 XP por tronco)"
+      TIII:
+        required_xp: 70000
+        reward_money: 1.0
+        reward_xp: 10
+        materials: ["BIRCH_LOG", "BIRCH_WOOD", "OAK_LOG", "OAK_WOOD"]
+        info: "Abedul y Roble ($1.0 / 10 XP por tronco)"
+      TIV:
+        required_xp: 160000
+        reward_money: 2.0
+        reward_xp: 20
+        materials: ["ACACIA_LOG", "ACACIA_WOOD"]
+        info: "Acacia ($2.0 / 20 XP por tronco)"
+      TV:
+        required_xp: 380000
+        reward_money: 4.0
+        reward_xp: 40
+        materials: ["MANGROVE_LOG", "MANGROVE_WOOD", "CHERRY_LOG", "CHERRY_WOOD"]
+        info: "Manglar y Cerezo ($4.0 / 40 XP por tronco)"
+      TVI:
+        required_xp: 800000
+        reward_money: 8.0
+        reward_xp: 80
+        materials: ["RED_MUSHROOM_BLOCK", "BROWN_MUSHROOM_BLOCK", "MUSHROOM_STEM"]
+        info: "Árboles Champiñón ($8.0 / 80 XP por tronco)"
+      TVII:
+        required_xp: 1600000
+        reward_money: 20.0
+        reward_xp: 200
+        materials: ["CRIMSON_STEM", "CRIMSON_HYPHAE", "WARPED_STEM", "WARPED_HYPHAE"]
+        info: "Carmesí y Distorsionado ($20.0 / 200 XP por tronco)"
+
+  granjero:
+    name: "Granjero"
+    description: "Cultiva la tierra, cosecha alimentos y cuida del ganado."
+    max_reward_info: "¡Al alcanzar el Nivel Máximo (TVII), obtendrás la guadaña automática para recolección en área!"
+    tiers:
+      TI:
+        required_xp: 0
+        reward_money: 0.1
+        reward_xp: 1
+        materials: ["SWEET_BERRIES", "SWEET_BERRY_BUSH", "GLOW_BERRIES"]
+        info: "Bayas ($0.1 / 1 XP)"
+      TII:
+        required_xp: 25000
+        reward_money: 0.3
+        reward_xp: 3
+        materials: ["BEETROOTS", "BEETROOT", "WHEAT"]
+        info: "Remolacha y Trigo ($0.3 / 3 XP)"
+      TIII:
+        required_xp: 75000
+        reward_money: 0.7
+        reward_xp: 6
+        materials: ["CARROTS", "CARROT", "POTATOES", "POTATO"]
+        info: "Zanahorias y Papas ($0.7 / 6 XP)"
+      TIV:
+        required_xp: 180000
+        reward_money: 1.2
+        reward_xp: 12
+        materials: ["MELON", "PUMPKIN"]
+        info: "Sandías y Calabazas ($1.2 / 12 XP)"
+      TV:
+        required_xp: 400000
+        reward_money: 2.5
+        reward_xp: 25
+        materials: ["BEETROOTS", "COCOA"]
+        info: "Remolacha y Cacao ($2.5 / 25 XP)"
+      TVI:
+        required_xp: 850000
+        reward_money: 5.0
+        reward_xp: 50
+        materials: ["NETHER_WART"]
+        info: "Verruga del Nether ($5.0 / 50 XP)"
+      TVII:
+        required_xp: 1500000
+        reward_money: 15.0
+        reward_xp: 100
+        materials: ["CHORUS_FLOWER", "CHORUS_PLANT"]
+        info: "Chorus Fruit ($15.0 / 100 XP)"
+
+  hechicero:
+    name: "Hechicero"
+    description: "Maestro de las artes arcanas, encantamientos y libros de poder."
+    max_reward_info: "¡Al alcanzar el Nivel Máximo (TVII), podrás encantar sin costo de experiencia!"
+    tiers:
+      TI:
+        required_xp: 0
+        reward_money: 2.0
+        reward_xp: 5
+        materials: ["GAME_XP"]
+        info: "Cada punto de Experiencia Conseguido ($2 / 5 XP)"
+      TII:
+        required_xp: 30000
+        reward_money: 10.0
+        reward_xp: 15
+        materials: ["LAPIS_SPENT"]
+        info: "Gastar Lapislázuli en encantamientos ($10 / 15 XP)"
+      TIII:
+        required_xp: 80000
+        reward_money: 25.0
+        reward_xp: 30
+        materials: ["BOOK_I_II"]
+        info: "Creación de Libros Encantados I-II ($25.0 / 30 XP)"
+      TIV:
+        required_xp: 200000
+        reward_money: 50.0
+        reward_xp: 60
+        materials: ["BOOK_II_III"]
+        info: "Creación de Libros Encantados II-III ($50.0 / 60 XP)"
+      TV:
+        required_xp: 450000
+        reward_money: 75.0
+        reward_xp: 120
+        materials: ["BOOK_III_IV"]
+        info: "Creación de Libros Encantados III-IV ($75.0 / 120 XP)"
+      TVI:
+        required_xp: 900000
+        reward_money: 100.0
+        reward_xp: 250
+        materials: ["BOOK_IV_V"]
+        info: "Creación de Libros Encantados IV-V ($100.0 / 250 XP)"
+      TVII:
+        required_xp: 1800000
+        reward_money: 125.0
+        reward_xp: 500
+        materials: ["BOOK_V_VI"]
+        info: "Creación de Libros Encantados V-VI ($125.0 / 500 XP)"
+
+  alquimista:
+    name: "Alquimista"
+    description: "Preparador de pociones mágicas, elixires y destilados avanzados."
+    max_reward_info: "¡Al alcanzar el Nivel Máximo (TVII), obtendrás caldero con infusiones automáticas!"
+    tiers:
+      TI:
+        required_xp: 0
+        reward_money: 5.0
+        reward_xp: 8
+        materials: ["NON_FUNCTIONAL_POTION"]
+        info: "Pociones no funcionales ($5 / 8 XP)"
+      TII:
+        required_xp: 25000
+        reward_money: 30.0
+        reward_xp: 18
+        materials: ["SPEED", "POISON", "INSTANT_HEAL"]
+        info: "Pociones de Velocidad, Veneno, Vida ($30 / 18 XP)"
+      TIII:
+        required_xp: 70000
+        reward_money: 60.0
+        reward_xp: 40
+        materials: ["JUMP_BOOST", "NIGHT_VISION", "SLOWNESS", "WEAKNESS", "WATER_BREATHING", "INFESTED", "INCREASE_DAMAGE"]
+        info: "Pociones de Salto, Visión Nocturna, Lentitud, Debilidad, Apnea, Infestación y Fuerza ($60 / 40 XP)"
+      TIV:
+        required_xp: 160000
+        reward_money: 90.0
+        reward_xp: 80
+        materials: ["INSTANT_DAMAGE", "SLOW_FALLING", "INVISIBILITY", "FIRE_RESISTANCE", "REGENERATION", "WEAVING", "WIND_CHARGED", "OOZING"]
+        info: "Pociones de Daño, Caída lenta, Invisibilidad, Prot. Fuego, Regeneración, Tejedura, Carga de Viento y Mucosidad ($90 / 80 XP)"
+      TV:
+        required_xp: 380000
+        reward_money: 25.0
+        reward_xp: 150
+        materials: ["UPGRADE_POTION"]
+        info: "Mejorar Duración y Nivel a pociones ($25.0 / 150 XP)"
+      TVI:
+        required_xp: 800000
+        reward_money: 200.0
+        reward_xp: 300
+        materials: ["TURTLE_MASTER"]
+        info: "Poción de Maestro tortuga ($200.0 / 300 XP)"
+      TVII:
+        required_xp: 1600000
+        reward_money: 250.0
+        reward_xp: 600
+        materials: ["LINGERING_POTION"]
+        info: "Hacer Pociones Lingering ($250.0 / 600 XP)"
+
+  pescador:
+    name: "Pescador"
+    description: "Experto en las profundidades acuáticas, pesca de recursos y tesoros."
+    max_reward_info: "¡Al alcanzar el Nivel Máximo (TVII), obtendrás caña con imán de tesoros automáticos!"
+    tiers:
+      TI:
+        required_xp: 0
+        reward_money: 0.5
+        reward_xp: 5
+        materials: ["COD", "SALMON"]
+        info: "Bacalao y Salmón ($0.5 / 5 XP)"
+      TII:
+        required_xp: 20000
+        reward_money: 1.2
+        reward_xp: 12
+        materials: ["TROPICAL_FISH"]
+        info: "Pez Payaso ($1.2 / 12 XP)"
+      TIII:
+        required_xp: 60000
+        reward_money: 5.0
+        reward_xp: 25
+        materials: ["PUFFERFISH"]
+        info: "Pez Globo ($5 / 25 XP)"
+      TIV:
+        required_xp: 150000
+        reward_money: 15.0
+        reward_xp: 50
+        materials: ["BOW", "FISHING_ROD", "NAME_TAG", "SADDLE"]
+        info: "Items T2 ($15.0 / 50 XP)"
+      TV:
+        required_xp: 350000
+        reward_money: 25.0
+        reward_xp: 100
+        materials: ["NAUTILUS_SHELL", "LILY_PAD", "BOWL", "LEATHER", "LEATHER_BOOTS", "BONE", "POTION", "STRING", "TRIPWIRE_HOOK", "INK_SAC"]
+        info: "Items T3 ($25.0 / 100 XP)"
+      TVI:
+        required_xp: 750000
+        reward_money: 45.0
+        reward_xp: 200
+        materials: ["ENCHANTED_BOOK"]
+        info: "Libros Encantados ($45.0 / 200 XP)"
+      TVII:
+        required_xp: 1500000
+        reward_money: 500.0
+        reward_xp: 450
+        materials: ["REPAIR_WITH_ROD"]
+        info: "Reparar Items con Caña ($500.0 / 450 XP)"
+
+  guerrero:
+    name: "Guerrero"
+    description: "Protector del reino, cazador de monstruos y bestias hostiles."
+    max_reward_info: "¡Al alcanzar el Nivel Máximo (TVII), desbloqueará aura de daño en área contra enemigos!"
+    tiers:
+      TI:
+        required_xp: 0
+        reward_money: 0.4
+        reward_xp: 4
+        materials: ["ZOMBIE", "SKELETON", "STRAY", "DROWNED", "HUSK", "ZOMBIE_VILLAGER"]
+        info: "Zombies y Esqueletos ($0.4 / 4 XP)"
+      TII:
+        required_xp: 30000
+        reward_money: 0.8
+        reward_xp: 8
+        materials: ["SPIDER", "CAVE_SPIDER", "CREEPER"]
+        info: "Arañas y Creepers ($0.8 / 8 XP)"
+      TIII:
+        required_xp: 90000
+        reward_money: 1.8
+        reward_xp: 18
+        materials: ["PIGLIN", "PIGLIN_BRUTE", "ZOMBIFIED_PIGLIN", "BLAZE"]
+        info: "Piglins y Blazes ($1.8 / 18 XP)"
+      TIV:
+        required_xp: 220000
+        reward_money: 3.5
+        reward_xp: 35
+        materials: ["ENDERMAN", "WITHER_SKELETON"]
+        info: "Endermans y Wither Skeletons ($3.5 / 35 XP)"
+      TV:
+        required_xp: 500000
+        reward_money: 7.0
+        reward_xp: 70
+        materials: ["GUARDIAN", "ELDER_GUARDIAN", "EVOKER"]
+        info: "Guardianes y Evocadores ($7.0 / 70 XP)"
+      TVI:
+        required_xp: 1100000
+        reward_money: 15.0
+        reward_xp: 150
+        materials: ["RAVAGER", "MINI_BOSS", "WARDEN"]
+        info: "Mini-Bosses y Ravagers ($15.0 / 150 XP)"
+      TVII:
+        required_xp: 2200000
+        reward_money: 40.0
+        reward_xp: 400
+        materials: ["PLAYER", "WITHER", "ENDER_DRAGON"]
+        info: "Jugadores en Anárquico / Bosses ($40.0 / 400 XP)"
